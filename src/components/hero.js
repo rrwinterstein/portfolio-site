@@ -1,21 +1,20 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
-import '../global.scss';
+import "../global.scss"
 
-
-const Hero = styled.div `
+const Hero = styled.div`
   display: flex;
   flex-direction: column;
-  background: #272D39;
+  background: #272d39;
 
   h1 {
-    font-family: 'Abril Fatface', serif;
+    font-family: "Abril Fatface", serif;
     font-style: normal;
     font-weight: normal;
     font-size: 96px;
     line-height: 74px;
-    color: #FFFFFF;
+    color: #ffffff;
     margin-top: 160px;
     margin-bottom: 0;
 
@@ -23,14 +22,13 @@ const Hero = styled.div `
       line-height: 180px;
     }
   }
-`;
+`
 
-const Nav = styled.nav `
+const Nav = styled.nav`
   display: flex;
   justify-content: flex-end;
   width: 100%;
   margin-top: 48px;
-
   .btn {
     display: block;
     float: right;
@@ -39,48 +37,47 @@ const Nav = styled.nav `
   .btn:first-child {
     margin-right: 24px;
   }
+`
 
-  .btn-primary {
-    display: inline-block;
-    font-family: 'Open Sans', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    text-align: center;
-    text-decoration: none;
-    color: #FFFFFF;
-    background: linear-gradient(185.56deg, #F4510B -0.01%, #C9004B 102.44%);
-    border-radius: 4px;
-    padding: 1px;
-  }
+const Button = styled.a`
+  display: inline-block;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  background: linear-gradient(185.56deg, #f4510b -0.01%, #c9004b 102.44%);
+  border-radius: 4px;
+  padding: 1px;
 
   .btn-inner {
-    background: #272D39;
+    background: #272d39;
     border-radius: 3px;
     padding: 12px 40px;
   }
-`;
-
+`
 
 function index() {
   return (
     <Hero>
       <div className="container">
         <Nav>
-          <a className="btn btn-primary" href="#">
-            <div className="btn-inner">
-              Work
-            </div>
-          </a>
-          <a className="btn btn-primary" href="#">
-            <div className="btn-inner">
-              Contact
-            </div>
-          </a>
+          <Button className="btn btn-primary" href="#">
+            <div className="btn-inner">Work</div>
+          </Button>
+          <Button className="btn btn-primary" href="#">
+            <div className="btn-inner">Contact</div>
+          </Button>
         </Nav>
 
-        <h1><span>Hello,</span><br/>I'm Robert Winterstein</h1>
+        <h1>
+          <span>Hello,</span>
+          <br />
+          I'm Robert Winterstein
+        </h1>
       </div>
     </Hero>
   )
