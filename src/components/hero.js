@@ -21,6 +21,15 @@ const Hero = styled.div`
     span {
       line-height: 180px;
     }
+
+    @media (max-width: 1224px) {
+      font-size: 72px;
+      line-height: 54px;
+
+      span {
+        line-height: 120px;
+      }
+    }
   }
 `
 
@@ -60,7 +69,7 @@ const Button = styled.a`
   }
 `
 
-function index() {
+function hero() {
   return (
     <Hero>
       <div className="container">
@@ -83,4 +92,4 @@ function index() {
   )
 }
 
-export default index
+export default hero

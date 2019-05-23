@@ -8,21 +8,29 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 const Footer = styled.footer`
-  padding-top: 160px;
+  padding-top: 120px;
   padding-bottom: 16px;
 
   .contact {
     display: flex;
     margin-bottom: 180px;
-  }
 
-  .social {
-    display: flex;
-    align-items: center;
-    margin-left: 80px;
+    .contact-methods {
+      padding-top: 16px;
+      margin-left: 80px;
 
-    a {
-      margin-right: 40px;
+      .social {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin-right: 40px;
+        }
+      }
+
+      .btn {
+        margin-top: 32px;
+      }
     }
   }
 
@@ -76,84 +84,86 @@ const Button = styled.a`
   }
 `
 
-function index() {
+function footer() {
   return (
     <Footer className="container">
       <div className="contact">
         <h3>Get in touch</h3>
 
-        <div className="social">
-          <a
-            href="https://dribbble.com/rwinterstein"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "dribbble"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/wintersteinrobert/"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "linkedin-in"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-          <a
-            href="https://www.instagram.com/robwinterstein/"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "instagram"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-          <a
-            href="https://github.com/rwinterstein"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github-alt"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-          <a
-            href="https://www.behance.net/rrwinterstcf2a"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "behance"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-          <a
-            href="https://twitter.com/rrwinterstein"
-            target="_blank"
-            rel="noopener"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "twitter"]}
-              color="#B1B8BB"
-              size="2x"
-            />
-          </a>
-        </div>
+        <div className="contact-methods">
+          <div className="social">
+            <a
+              href="https://dribbble.com/rwinterstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "dribbble"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/wintersteinrobert/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "linkedin-in"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/robwinterstein/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "instagram"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+            <a
+              href="https://github.com/rwinterstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "github-alt"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+            <a
+              href="https://www.behance.net/rrwinterstcf2a"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "behance"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+            <a
+              href="https://twitter.com/rrwinterstein"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon
+                icon={["fab", "twitter"]}
+                color="#B1B8BB"
+                size="2x"
+              />
+            </a>
+          </div>
 
-        <Button className="btn btn-primary" href="#">
-          <div className="btn-inner">Work</div>
-        </Button>
+          <Button className="btn btn-primary" href="#">
+            <div className="btn-inner">Work</div>
+          </Button>
+        </div>
       </div>
 
       <div className="copyright">
@@ -166,4 +176,4 @@ function index() {
   )
 }
 
-export default index
+export default footer
