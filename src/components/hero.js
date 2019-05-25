@@ -15,14 +15,14 @@ const Hero = styled.div`
     font-size: 96px;
     line-height: 74px;
     color: #ffffff;
-    margin-top: 160px;
+    margin-top: 200px;
     margin-bottom: 0;
 
     span {
       line-height: 180px;
     }
 
-    @media (max-width: 1224px) {
+    @media (max-width: 1223px) {
       font-size: 72px;
       line-height: 54px;
 
@@ -66,6 +66,18 @@ const Button = styled.a`
     background: #272d39;
     border-radius: 3px;
     padding: 12px 40px;
+    -webkit-transition: all 200ms ease-in-out;
+    -mox-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background: #1f242e;
+      -webkit-transition: all 200ms ease-in-out;
+      -mox-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+    }
   }
 `
 

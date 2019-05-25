@@ -34,16 +34,6 @@ const Footer = styled.footer`
     }
   }
 
-  h3 {
-    font-family: "Abril Fatface";
-    font-style: normal;
-    font-weight: normal;
-    font-size: 48px;
-    line-height: 65px;
-    color: #272d39;
-    margin-bottom: 0;
-  }
-
   FontAwesomeIcon {
     display: flex;
   }
@@ -75,12 +65,23 @@ const Button = styled.a`
   background: linear-gradient(185.56deg, #f4510b -0.01%, #c9004b 102.44%);
   border-radius: 4px;
   padding: 1px;
-  
 
   .btn-inner {
     background: #fff;
     border-radius: 3px;
     padding: 12px 40px;
+    -webkit-transition: all 200ms ease-in-out;
+    -mox-transition: all 200ms ease-in-out;
+    -o-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      background: #f7f8f9;
+      -webkit-transition: all 200ms ease-in-out;
+      -mox-transition: all 200ms ease-in-out;
+      -o-transition: all 200ms ease-in-out;
+      transition: all 200ms ease-in-out;
+    }
   }
 `
 
@@ -88,7 +89,7 @@ function footer() {
   return (
     <Footer className="container">
       <div className="contact">
-        <h3>Get in touch</h3>
+        <h2>Get in touch</h2>
 
         <div className="contact-methods">
           <div className="social">
@@ -161,7 +162,7 @@ function footer() {
           </div>
 
           <Button className="btn btn-primary" href="#">
-            <div className="btn-inner">Work</div>
+            <div className="btn-inner">Email</div>
           </Button>
         </div>
       </div>
