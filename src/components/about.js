@@ -19,13 +19,7 @@ const About = styled.section`
     margin-top: 8px;
   }
 
-  .paragraph {
-    font-family: "Open Sans", sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 22px;
-    line-height: 30px;
-    color: #272d39;
+  p {
     margin-top: 24px;
     margin-bottom: 0;
   }
@@ -35,8 +29,10 @@ const About = styled.section`
     justify-content: space-between;
     padding-top: 160px;
     padding-bottom: 160px;
+    padding-left: 8%;
+    padding-right: 8%;
 
-      .section {
+    .section {
       width: 45%;
 
       &:nth-child(1) {
@@ -49,6 +45,11 @@ const About = styled.section`
         margin-top: 240px;
       }
     }
+  }
+
+  @media (min-width: 1024px) {
+    padding-left: 12%;
+    padding-right: 12%;
   }
 `
 
@@ -64,7 +65,7 @@ function about() {
           from Orlando Florida.
         </h4>
 
-        <p className="paragraph">
+        <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -83,7 +84,7 @@ function about() {
           Apple<span style={{ color: "#B1B8BB" }}> | Jan 19 – Jun 19</span>
         </h4>
 
-        <p className="paragraph">
+        <p>
           On the AI/Machine Learning team, I worked on design and development
           for internal software platforms, application that utilize machine
           learning, the team’s design system, and some websites. A large portion

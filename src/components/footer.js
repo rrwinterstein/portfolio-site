@@ -8,29 +8,37 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 const Footer = styled.footer`
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 16px;
+  padding-left: 12%;
+  padding-right: 12%;
 
   .contact {
-    display: flex;
-    margin-bottom: 180px;
+    display: block;
+    margin-bottom: 120px;
 
     .contact-methods {
-      padding-top: 16px;
-      margin-left: 80px;
+      padding-top: 40px;
 
       .social {
         display: flex;
         align-items: center;
+        margin-bottom: 32px;
 
         a {
           margin-right: 40px;
         }
       }
 
-      .btn {
-        margin-top: 32px;
+      @media (min-width: 1024px) {
+        padding-top: 16px;
+        padding-left: 80px;
       }
+    }
+
+    @media (min-width: 1024px) {
+      display: flex;
+      margin-bottom: 180px;
     }
   }
 
@@ -50,6 +58,10 @@ const Footer = styled.footer`
       color: #b1b8bb;
     }
   }
+
+  @media (min-width: 1024px) {
+    padding-top: 120px;
+  }
 `
 
 const Button = styled.a`
@@ -57,8 +69,8 @@ const Button = styled.a`
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
   text-decoration: none;
   color: #272d39;
@@ -69,7 +81,7 @@ const Button = styled.a`
   .btn-inner {
     background: #fff;
     border-radius: 3px;
-    padding: 12px 40px;
+    padding: 8px 24px;
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
@@ -81,6 +93,16 @@ const Button = styled.a`
       -mox-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .btn-inner {
+      padding: 12px 40px;
     }
   }
 `
@@ -161,7 +183,7 @@ function footer() {
             </a>
           </div>
 
-          <Button className="btn btn-primary" href="#">
+          <Button className="btn btn-primary" href="mailto:rrwinterstein@gmail.com?subject=Hello!">
             <div className="btn-inner">Email</div>
           </Button>
         </div>

@@ -10,19 +10,6 @@ const Hero = styled.div`
 
   h1 {
     padding-top: 25vh;
-
-    span {
-      line-height: 180px;
-    }
-
-    @media (max-width: 1223px) {
-      font-size: 72px;
-      line-height: 54px;
-
-      span {
-        line-height: 120px;
-      }
-    }
   }
 `
 
@@ -36,9 +23,14 @@ const Nav = styled.nav`
     float: right;
   }
 
-  .btn:first-child {
-    margin-right: 24px;
+  .btn:nth-child(1) {
+    margin-right: 16px;
+
+    @media (min-width: 800px) {
+      margin-right: 24px;
+    }
   }
+
 `
 
 const Button = styled.a`
@@ -46,8 +38,8 @@ const Button = styled.a`
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 18px;
-  line-height: 25px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -58,7 +50,7 @@ const Button = styled.a`
   .btn-inner {
     background: #272d39;
     border-radius: 3px;
-    padding: 12px 40px;
+    padding: 8px 24px;
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
@@ -70,6 +62,16 @@ const Button = styled.a`
       -mox-transition: all 200ms ease-in-out;
       -o-transition: all 200ms ease-in-out;
       transition: all 200ms ease-in-out;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 18px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .btn-inner {
+      padding: 12px 40px;
     }
   }
 `
