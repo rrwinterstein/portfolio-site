@@ -9,14 +9,7 @@ const Hero = styled.div`
   background: #272d39;
 
   h1 {
-    font-family: "Abril Fatface", serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 96px;
-    line-height: 74px;
-    color: #ffffff;
-    margin-top: 200px;
-    margin-bottom: 0;
+    padding-top: 25vh;
 
     span {
       line-height: 180px;

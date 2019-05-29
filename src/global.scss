@@ -4,6 +4,16 @@
   padding: 0 8%;
 }
 
+h1 {
+  font-family: "Abril Fatface", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 96px;
+  line-height: 74px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
 h2 {
   font-family: "Abril Fatface";
   font-style: normal;
@@ -21,6 +31,7 @@ h3 {
   font-size: 36px;
   line-height: 49px;
   color: #272d39;
+  margin: 0;
 }
 
 h4 {
@@ -33,6 +44,6 @@ h4 {
   margin: 0;
 }
 
-*:focus { 
+*:focus {
   outline: none;
 }

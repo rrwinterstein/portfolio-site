@@ -4,18 +4,15 @@ import styled from "styled-components"
 import "../global.scss"
 
 const About = styled.section`
-  display: flex;
-  justify-content: space-between;
+  display: block;
   background: #fff;
-  padding-top: 160px;
-  padding-bottom: 160px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  padding-left: 12%;
+  padding-right: 12%;
 
-  .section {
-    width: 45%;
-
-    &:nth-child(2) {
-      margin-top: 240px;
-    }
+  .section:nth-child(1) {
+    margin-bottom: 80px;
   }
 
   h4 {
@@ -31,6 +28,27 @@ const About = styled.section`
     color: #272d39;
     margin-top: 24px;
     margin-bottom: 0;
+  }
+
+  @media (min-width: 800px) {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+    padding-bottom: 160px;
+
+      .section {
+      width: 45%;
+
+      &:nth-child(1) {
+        align-self: flex-start;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2) {
+        align-self: flex-end;
+        margin-top: 240px;
+      }
+    }
   }
 `
 

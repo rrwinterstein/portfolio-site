@@ -7,24 +7,70 @@ import "../global.scss"
 
 const Work = styled.section`
   background: #f7f8f9;
-  padding-top: 200px;
+  padding-top: 120px;
   padding-bottom: 200px;
+  padding-left: 12%;
+  padding-right: 12%;
 
-  .case-study {
-    display: flex;
+  h2 {
+    text-align: center;
+    margin-bottom: 200px;
+  }
+`
 
-    img {
-      height: 50%;
-      width: 50%;
-      object-fit: contain;
+const CaseStudy = styled.div`
+  display: flex;
+
+  h3 {
+    margin-bottom: 24px;
+  }
+
+  img {
+    height: 50%;
+    width: 50%;
+    object-fit: contain;
+  }
+
+  .img--cloud-space {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+  }
+
+  @media (min-width: 800px) {
+    &:nth-child(2) {
+      justify-content: space-around;
+      margin-bottom: 200px;
     }
 
-    .img--tapmap {
+    &:nth-child(3) {
+      justify-content: space-around;
     }
 
-    .img--cloud-space {
-      box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-      border-radius: 8px;
+    .desktop--reverse {
+      order: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    &:nth-child(2) {
+      justify-content: flex-start;
+      margin-bottom: 200px;
+
+      div {
+        margin-left: 120px;
+      }
+    }
+
+    &:nth-child(3) {
+      justify-content: flex-end;
+
+      div {
+        margin-right: 120px;
+      }
+    }
+
+    .desktop--reverse {
+      order: 2;
     }
   }
 `
@@ -60,20 +106,22 @@ function work() {
   return (
     <Work className="container">
       <h2>Case Studies</h2>
-      <div className="case-study">
-        <div>
+
+      <CaseStudy className="case-study">
+        <div className="desktop--reverse">
           <h3>Tapmap</h3>
           <Button href="#">Case Study</Button>
         </div>
         <img src={tapmap} alt="Tapmap" />
-      </div>
-      <div className="case-study">
+      </CaseStudy>
+
+      <CaseStudy className="case-study">
         <div>
           <h3>Cloud Space</h3>
           <Button href="#">Case Study</Button>
         </div>
         <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
-      </div>
+      </CaseStudy>
     </Work>
   )
 }
