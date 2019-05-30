@@ -108,7 +108,7 @@ const Button = styled.a`
   text-decoration: none;
   color: #272d39;
   background-color: transparent;
-  border: 1px solid #272d39;
+  border: 1px solid #b1b8bb;
   border-radius: 4px;
   padding: 8px 16px;
   -webkit-transition: all 200ms ease-in-out;
@@ -118,6 +118,7 @@ const Button = styled.a`
 
   &:hover {
     background-color: #edeeef;
+    border-color: #272d39;
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;

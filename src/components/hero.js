@@ -6,10 +6,21 @@ import "../global.scss"
 const Hero = styled.div`
   display: flex;
   flex-direction: column;
-  background: #272d39;
+  background: #f7f8f9;
 
   h1 {
-    padding-top: 25vh;
+    margin-top: 48px;
+    margin-bottom: 24px;
+  }
+
+  p {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 49px;
+    color: #272d39;
+    margin-bottom: 48px;
   }
 `
 
@@ -18,23 +29,19 @@ const Nav = styled.nav`
   justify-content: flex-end;
   width: 100%;
   margin-top: 48px;
+
   .btn {
-    display: block;
-    float: right;
-  }
+    &:nth-child(1) {
+      margin-right: 16px;
 
-  .btn:nth-child(1) {
-    margin-right: 16px;
-
-    @media (min-width: 800px) {
-      margin-right: 24px;
+      @media (min-width: 800px) {
+        margin-right: 24px;
+      }
     }
   }
-
 `
 
 const Button = styled.a`
-  display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -42,37 +49,29 @@ const Button = styled.a`
   line-height: 22px;
   text-align: center;
   text-decoration: none;
-  color: #fff;
-  background: linear-gradient(185.56deg, #f4510b -0.01%, #c9004b 102.44%);
+  color: #272d39;
+  background-color: transparent;
+  border: 1px solid #b1b8bb;
   border-radius: 4px;
-  padding: 1px;
+  padding: 8px 16px;
+  -webkit-transition: all 200ms ease-in-out;
+  -mox-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 
-  .btn-inner {
-    background: #272d39;
-    border-radius: 3px;
-    padding: 8px 24px;
+  &:hover {
+    background: #edeeef;
+    border-color: #272d39;
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-
-    &:hover {
-      background: #1f242e;
-      -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 18px;
-    }
   }
 
   @media (min-width: 1024px) {
-    .btn-inner {
-      padding: 12px 40px;
-    }
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 24px;
   }
 `
 
@@ -81,19 +80,25 @@ function hero() {
     <Hero>
       <div className="container">
         <Nav>
-          <Button className="btn btn-primary" href="#">
-            <div className="btn-inner">Work</div>
+          <Button className="btn" href="#">
+            Work
           </Button>
-          <Button className="btn btn-primary" href="#">
-            <div className="btn-inner">Contact</div>
+          <Button className="btn" href="#">
+            Contact
           </Button>
         </Nav>
 
         <h1>
-          <span>Hello,</span>
+          Robert
           <br />
-          I'm Robert Winterstein
+          Winterstein
         </h1>
+
+        <p>
+          a UX/UI designer who
+          <br />
+          loves to code
+        </p>
       </div>
     </Hero>
   )

@@ -65,7 +65,6 @@ const Footer = styled.footer`
 `
 
 const Button = styled.a`
-  display: inline-block;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -74,36 +73,28 @@ const Button = styled.a`
   text-align: center;
   text-decoration: none;
   color: #272d39;
-  background: linear-gradient(185.56deg, #f4510b -0.01%, #c9004b 102.44%);
+  background-color: transparent;
+  border: 1px solid #b1b8bb;
   border-radius: 4px;
-  padding: 1px;
+  padding: 8px 16px;
+  -webkit-transition: all 200ms ease-in-out;
+  -mox-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 
-  .btn-inner {
-    background: #fff;
-    border-radius: 3px;
-    padding: 8px 24px;
+  &:hover {
+    background: #edeeef;
+    border-color: #272d39;
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
-
-    &:hover {
-      background: #f7f8f9;
-      -webkit-transition: all 200ms ease-in-out;
-      -mox-transition: all 200ms ease-in-out;
-      -o-transition: all 200ms ease-in-out;
-      transition: all 200ms ease-in-out;
-    }
-
-    @media (min-width: 1024px) {
-      font-size: 18px;
-    }
   }
 
   @media (min-width: 1024px) {
-    .btn-inner {
-      padding: 12px 40px;
-    }
+    font-size: 18px;
+    line-height: 25px;
+    padding: 10px 24px;
   }
 `
 
@@ -183,8 +174,11 @@ function footer() {
             </a>
           </div>
 
-          <Button className="btn btn-primary" href="mailto:rrwinterstein@gmail.com?subject=Hello!">
-            <div className="btn-inner">Email</div>
+          <Button
+            className="btn btn-primary"
+            href="mailto:rrwinterstein@gmail.com?subject=Hello!"
+          >
+            Email
           </Button>
         </div>
       </div>
