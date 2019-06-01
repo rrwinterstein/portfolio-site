@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
+import "../colors.css"
+import "../global.scss"
+
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { fab } from "@fortawesome/free-brands-svg-icons"
@@ -26,7 +29,26 @@ const Footer = styled.footer`
         margin-bottom: 32px;
 
         a {
-          margin-right: 40px;
+          height: 36px;
+          width: 36px;
+          display: flex;
+          justify-content: center;
+          box-sizing: content-box;
+          border-radius: 10px;
+          padding: 8px 10px;
+          margin-right: 24px;
+          -webkit-transition: all 200ms ease-in-out;
+          -mox-transition: all 200ms ease-in-out;
+          -o-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+
+          :hover {
+            background-color: var(--grayLight);
+            -webkit-transition: all 200ms ease-in-out;
+            -mox-transition: all 200ms ease-in-out;
+            -o-transition: all 200ms ease-in-out;
+            transition: all 200ms ease-in-out;
+          }
         }
       }
 
@@ -52,11 +74,7 @@ const Footer = styled.footer`
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    color: #272d39;
-
-    span {
-      color: #b1b8bb;
-    }
+    color: var(--gray);
   }
 
   @media (min-width: 1024px) {
@@ -72,9 +90,9 @@ const Button = styled.a`
   line-height: 22px;
   text-align: center;
   text-decoration: none;
-  color: #272d39;
+  color: var(--gray);
   background-color: transparent;
-  border: 1px solid #b1b8bb;
+  border: 1px solid var(--gray);
   border-radius: 4px;
   padding: 8px 16px;
   -webkit-transition: all 200ms ease-in-out;
@@ -83,8 +101,7 @@ const Button = styled.a`
   transition: all 200ms ease-in-out;
 
   &:hover {
-    background: #edeeef;
-    border-color: #272d39;
+    background-color: var(--grayLight);
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
@@ -113,7 +130,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "dribbble"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -124,7 +141,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "linkedin-in"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -135,7 +152,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "instagram"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -146,7 +163,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "github-alt"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -157,7 +174,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "behance"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -168,7 +185,7 @@ function footer() {
             >
               <FontAwesomeIcon
                 icon={["fab", "twitter"]}
-                color="#B1B8BB"
+                color="#61666d"
                 size="2x"
               />
             </a>
@@ -185,9 +202,7 @@ function footer() {
 
       <div className="copyright">
         © {new Date().getFullYear()} - Robert Winterstein{" "}
-        <span>
-          <span style={{ margin: 8 }}>|</span> Thanks for visiting 😁
-        </span>
+        <span style={{ margin: 8 }}>|</span> Thanks for visiting 😁
       </div>
     </Footer>
   )

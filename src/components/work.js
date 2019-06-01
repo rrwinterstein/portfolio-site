@@ -3,16 +3,18 @@ import styled from "styled-components"
 import tapmap from "../images/tapmap.png"
 import cloudSpace from "../images/cloud-space.png"
 
+import "../colors.css"
 import "../global.scss"
 
 const Work = styled.section`
-  background: #f7f8f9;
+  background: var(--grayDark);
   padding-top: 96px;
   padding-bottom: 120px;
   padding-left: 12%;
   padding-right: 12%;
 
   h2 {
+    color: var(--grayLight);
     text-align: center;
     margin-bottom: 120px;
   }
@@ -37,6 +39,7 @@ const CaseStudy = styled.div`
   display: block;
 
   h3 {
+    color: var(--grayLight);
     margin-bottom: 24px;
   }
 
@@ -44,6 +47,7 @@ const CaseStudy = styled.div`
     height: 50%;
     width: 50%;
     object-fit: contain;
+    margin: 0;
   }
 
   .img--cloud-space {
@@ -54,6 +58,10 @@ const CaseStudy = styled.div`
   @media (min-width: 800px) {
     display: flex;
 
+    .title {
+      align-self: center;
+    }
+
     &:nth-child(2) {
       justify-content: space-around;
       margin-bottom: 120px;
@@ -63,8 +71,10 @@ const CaseStudy = styled.div`
       justify-content: space-around;
     }
 
-    .desktop--reverse {
-      order: 2;
+    &:nth-child(even) {
+      .title {
+        order: 2;
+      }
     }
   }
 
@@ -85,10 +95,6 @@ const CaseStudy = styled.div`
         margin-right: 120px;
       }
     }
-
-    .desktop--reverse {
-      order: 2;
-    }
   }
 
   @media (min-width: 1280px) {
@@ -106,9 +112,9 @@ const Button = styled.a`
   line-height: 22px;
   text-align: center;
   text-decoration: none;
-  color: #272d39;
+  color: var(--grayLight);
   background-color: transparent;
-  border: 1px solid #b1b8bb;
+  border: 1px solid var(--grayLight);
   border-radius: 4px;
   padding: 8px 16px;
   -webkit-transition: all 200ms ease-in-out;
@@ -117,8 +123,7 @@ const Button = styled.a`
   transition: all 200ms ease-in-out;
 
   &:hover {
-    background-color: #edeeef;
-    border-color: #272d39;
+    background-color: var(--grayDarker);
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
@@ -138,9 +143,9 @@ function work() {
       <h2>Case Studies</h2>
 
       <CaseStudy className="case-study">
-        <div className="title desktop--reverse">
+        <div className="title">
           <h3>Tapmap</h3>
-          <Button href="#">Case Study</Button>
+          <Button href="#">View</Button>
         </div>
         <img src={tapmap} alt="Tapmap" />
       </CaseStudy>
@@ -148,7 +153,7 @@ function work() {
       <CaseStudy className="case-study">
         <div className="title">
           <h3>Cloud Space</h3>
-          <Button href="#">Case Study</Button>
+          <Button href="#">View</Button>
         </div>
         <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
       </CaseStudy>

@@ -1,12 +1,15 @@
 import React from "react"
 import styled from "styled-components"
 
+import "../colors.css"
 import "../global.scss"
 
 const Hero = styled.div`
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #f7f8f9;
+  justify-content: space-around;
+  background: var(--grayLight);
 
   h1 {
     margin-top: 48px;
@@ -19,60 +22,92 @@ const Hero = styled.div`
     font-weight: 300;
     font-size: 36px;
     line-height: 49px;
-    color: #272d39;
     margin-bottom: 48px;
   }
 `
 
 const Nav = styled.nav`
+  position: absolute;
+  top: 40px;
+  right: 120px;
   display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  margin-top: 48px;
+  float: right;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 38px;
+  padding: 4px;
+  cursor: pointer;
 
-  .btn {
-    &:nth-child(1) {
-      margin-right: 16px;
-
-      @media (min-width: 800px) {
-        margin-right: 24px;
-      }
-    }
-  }
-`
-
-const Button = styled.a`
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 22px;
-  text-align: center;
-  text-decoration: none;
-  color: #272d39;
-  background-color: transparent;
-  border: 1px solid #b1b8bb;
-  border-radius: 4px;
-  padding: 8px 16px;
-  -webkit-transition: all 200ms ease-in-out;
-  -mox-transition: all 200ms ease-in-out;
-  -o-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
-
-  &:hover {
-    background: #edeeef;
-    border-color: #272d39;
+  span {
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
     transition: all 200ms ease-in-out;
   }
 
-  @media (min-width: 1024px) {
-    font-size: 18px;
-    line-height: 25px;
-    padding: 10px 24px;
+  span:nth-child(1) {
+    position: relative;
+    left: 7px;
+    display: block;
+    height: 2px;
+    width: 20px;
+    background-color: var(--grayDark);
+    border-radius: 1px;
   }
+
+  span:nth-child(2) {
+    position: relative;
+    left: 0px;
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: var(--grayDark);
+    border-radius: 1px;
+  }
+
+  span:nth-child(3) {
+    position: relative;
+    left: 12px;
+    display: block;
+    height: 2px;
+    width: 18px;
+    background-color: var(--grayDark);
+    border-radius: 1px;
+  }
+
+  :hover {
+    span:nth-child(1) {
+      width: 22px;
+      left: 8px;
+    }
+
+    span:nth-child(2) {
+      width: 20px;
+      left: 10px;
+    }
+
+    span:nth-child(3) {
+      width: 24px;
+      left: 6px;
+    }
+  }
+
+  :active {
+    span:nth-child(1) {
+      width: 6px;
+      left: 24px;
+    }
+
+    span:nth-child(2) {
+      width: 6px;
+      left: 24px;
+    }
+
+    span:nth-child(3) {
+      width: 6px;
+      left: 24px;
+    }
 `
 
 function hero() {
@@ -80,19 +115,12 @@ function hero() {
     <Hero>
       <div className="container">
         <Nav>
-          <Button className="btn" href="#">
-            Work
-          </Button>
-          <Button className="btn" href="#">
-            Contact
-          </Button>
+          <span />
+          <span />
+          <span />
         </Nav>
 
-        <h1>
-          Robert
-          <br />
-          Winterstein
-        </h1>
+        <h1>Robert Winterstein</h1>
 
         <p>
           a UX/UI designer who

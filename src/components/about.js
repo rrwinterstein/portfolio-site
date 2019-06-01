@@ -1,11 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
+import "../colors.css"
 import "../global.scss"
 
 const About = styled.section`
   display: block;
-  background: #fff;
+  height: 100vh;
+  min-height: 900px;
+  background: var(--white);
   padding-top: 120px;
   padding-bottom: 120px;
   padding-left: 12%;
@@ -22,6 +25,10 @@ const About = styled.section`
   p {
     margin-top: 24px;
     margin-bottom: 0;
+  }
+
+  span {
+    color: var(--accent);
   }
 
   @media (min-width: 800px) {
@@ -60,7 +67,7 @@ function about() {
         <h2>What I do</h2>
 
         <h4>
-          UX/UI Designer & Developer
+          UX/UI Designer <span>&</span> Developer
           <br />
           from Orlando Florida.
         </h4>
@@ -81,7 +88,7 @@ function about() {
         <h4>
           UX/UI Design Internship
           <br />
-          Apple<span style={{ color: "#B1B8BB" }}> | Jan 19 – Jun 19</span>
+          Apple <span>|</span> Jan 19 – Jun 19
         </h4>
 
         <p>
