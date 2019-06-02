@@ -8,10 +8,8 @@ import "../global.scss"
 
 const Work = styled.section`
   background: var(--grayDark);
-  padding-top: 96px;
+  padding-top: 80px;
   padding-bottom: 120px;
-  padding-left: 12%;
-  padding-right: 12%;
 
   h2 {
     color: var(--grayLight);
@@ -19,14 +17,20 @@ const Work = styled.section`
     margin-bottom: 120px;
   }
 
-  @media (min-width: 1024px) {
+  @media (min-width: 768px) {
+    padding-top: 96px;
+
     h2 {
       margin-bottom: 160px;
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1024px) {
     padding-top: 120px;
+    padding-bottom: 160px;
+  }
+
+  @media (min-width: 1280px) {
     padding-bottom: 200px;
 
     h2 {
@@ -36,39 +40,66 @@ const Work = styled.section`
 `
 
 const CaseStudy = styled.div`
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  h3 {
-    color: var(--grayLight);
-    margin-bottom: 24px;
+  &:nth-child(n) {
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 40px;
+
+      h3 {
+        color: var(--grayLight);
+        margin-bottom: 24px;
+      }
+
+      .btn {
+        align-self: center;
+      }
+    }
+
+    img {
+      width: 80%;
+      object-fit: contain;
+      margin: 0;
+    }
   }
 
-  img {
-    height: 50%;
-    width: 50%;
-    object-fit: contain;
-    margin: 0;
+  &:nth-child(2) {
+    margin-bottom: 120px;
   }
 
   .img--cloud-space {
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+    border-radius: 5px;
   }
 
-  @media (min-width: 800px) {
-    display: flex;
+  @media (min-width: 768px) {
+    flex-direction: row;
 
-    .title {
-      align-self: center;
-    }
-
-    &:nth-child(2) {
+    &:nth-child(n) {
       justify-content: space-around;
-      margin-bottom: 120px;
-    }
 
-    &:nth-child(3) {
-      justify-content: space-around;
+      .title {
+        align-self: center;
+        margin-bottom: 0;
+
+        h3 {
+          color: var(--grayLight);
+          margin-bottom: 24px;
+        }
+
+        .btn {
+          align-self: flex-start;
+        }
+      }
+
+      img {
+        height: 50%;
+        width: 50%;
+      }
     }
 
     &:nth-child(even) {
@@ -88,7 +119,7 @@ const CaseStudy = styled.div`
       }
     }
 
-    &:nth-child(3) {
+    &:last-child {
       justify-content: flex-end;
 
       .title {
@@ -105,6 +136,7 @@ const CaseStudy = styled.div`
 `
 
 const Button = styled.a`
+  width: fit-content;
   font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
@@ -142,18 +174,18 @@ function work() {
     <Work className="container">
       <h2>Case Studies</h2>
 
-      <CaseStudy className="case-study">
+      <CaseStudy>
         <div className="title">
           <h3>Tapmap</h3>
-          <Button href="#">View</Button>
+          <Button className="btn" href="#">View</Button>
         </div>
         <img src={tapmap} alt="Tapmap" />
       </CaseStudy>
 
-      <CaseStudy className="case-study">
+      <CaseStudy>
         <div className="title">
           <h3>Cloud Space</h3>
-          <Button href="#">View</Button>
+          <Button className="btn" href="#">View</Button>
         </div>
         <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
       </CaseStudy>

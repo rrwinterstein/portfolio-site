@@ -12,31 +12,25 @@ const Hero = styled.div`
   background: var(--grayLight);
 
   h1 {
-    margin-top: 48px;
-    margin-bottom: 24px;
-  }
+    margin-bottom: 16px;
 
-  p {
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 49px;
-    margin-bottom: 48px;
+    @media (min-width: 768px) {
+      margin-bottom: 24px;
+    }
   }
 `
 
 const Nav = styled.nav`
   position: absolute;
-  top: 40px;
-  right: 120px;
+  top: 1rem;
+  right: 1rem;
   display: flex;
   float: right;
   flex-direction: column;
   justify-content: space-between;
-  height: 24px;
-  width: 38px;
-  padding: 4px;
+  height: 26px;
+  width: 40px;
+  padding: 5px;
   cursor: pointer;
 
   span {
@@ -108,6 +102,16 @@ const Nav = styled.nav`
       width: 6px;
       left: 24px;
     }
+  }
+
+  @media (min-width: 768px) {
+    top: 2rem;
+    right: 4rem;
+  }
+
+  @media (min-width: 1280px) {
+    right: 6rem;
+  }
 `
 
 function hero() {
@@ -122,7 +126,7 @@ function hero() {
 
         <h1>Robert Winterstein</h1>
 
-        <p>
+        <p className="subheading">
           a UX/UI designer who
           <br />
           loves to code

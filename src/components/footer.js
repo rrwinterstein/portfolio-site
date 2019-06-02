@@ -11,56 +11,32 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 const Footer = styled.footer`
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 16px;
-  padding-left: 12%;
-  padding-right: 12%;
+
+  h2 {
+    margin-bottom: 32px;
+  }
 
   .contact {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-bottom: 120px;
+  }
 
-    .contact-methods {
-      padding-top: 40px;
+  .methods {
+    display: flex;
+    flex-direction: column;
+  }
 
-      .social {
-        display: flex;
-        align-items: center;
-        margin-bottom: 32px;
+  .social {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-bottom: 16px;
 
-        a {
-          height: 36px;
-          width: 36px;
-          display: flex;
-          justify-content: center;
-          box-sizing: content-box;
-          border-radius: 10px;
-          padding: 8px 10px;
-          margin-right: 24px;
-          -webkit-transition: all 200ms ease-in-out;
-          -mox-transition: all 200ms ease-in-out;
-          -o-transition: all 200ms ease-in-out;
-          transition: all 200ms ease-in-out;
-
-          :hover {
-            background-color: var(--grayLight);
-            -webkit-transition: all 200ms ease-in-out;
-            -mox-transition: all 200ms ease-in-out;
-            -o-transition: all 200ms ease-in-out;
-            transition: all 200ms ease-in-out;
-          }
-        }
-      }
-
-      @media (min-width: 1024px) {
-        padding-top: 16px;
-        padding-left: 80px;
-      }
-    }
-
-    @media (min-width: 1024px) {
-      display: flex;
-      margin-bottom: 180px;
+    a {
+      margin-right: 16px;
     }
   }
 
@@ -72,17 +48,81 @@ const Footer = styled.footer`
     font-family: "Open Sans";
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 10px;
+    line-height: 14px;
     color: var(--gray);
+
+    span {
+      color: var(--accent);
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 80px;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .social {
+      margin-bottom: 24px;
+      margin-left: -10px;
+      font-size: 1.75rem;
+
+      a {
+        height: 36px;
+        width: 36px;
+        display: flex;
+        justify-content: center;
+        box-sizing: content-box;
+        border-radius: 10px;
+        padding: 8px 10px;
+        margin-right: 8px;
+        -webkit-transition: all 200ms ease-in-out;
+        -mox-transition: all 200ms ease-in-out;
+        -o-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
+
+        :hover {
+          background-color: var(--grayLight);
+          -webkit-transition: all 200ms ease-in-out;
+          -mox-transition: all 200ms ease-in-out;
+          -o-transition: all 200ms ease-in-out;
+          transition: all 200ms ease-in-out;
+        }
+      }
+    }
+
+    .copyright {
+      font-size: 12px;
+      line-height: 16px;
+    }
   }
 
   @media (min-width: 1024px) {
     padding-top: 120px;
+
+    .contact {
+      margin-bottom: 180px;
+    }
+
+    .social {
+      font-size: 2rem;
+
+      a {
+        margin-right: 16px;
+      }
+    }
+
+    .copyright {
+      font-size: 14px;
+      line-height: 19px;
+    }
   }
 `
 
 const Button = styled.a`
+  width: fit-content;
   font-family: "Open Sans", sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -121,73 +161,35 @@ function footer() {
       <div className="contact">
         <h2>Get in touch</h2>
 
-        <div className="contact-methods">
+        <div className="methods">
           <div className="social">
             <a
               href="https://dribbble.com/rwinterstein"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={["fab", "dribbble"]}
-                color="#61666d"
-                size="2x"
-              />
+              <FontAwesomeIcon icon={["fab", "dribbble"]} color="#61666d" />
             </a>
             <a
               href="https://www.linkedin.com/in/wintersteinrobert/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={["fab", "linkedin-in"]}
-                color="#61666d"
-                size="2x"
-              />
+              <FontAwesomeIcon icon={["fab", "linkedin-in"]} color="#61666d" />
             </a>
             <a
               href="https://www.instagram.com/robwinterstein/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={["fab", "instagram"]}
-                color="#61666d"
-                size="2x"
-              />
+              <FontAwesomeIcon icon={["fab", "instagram"]} color="#61666d" />
             </a>
             <a
               href="https://github.com/rwinterstein"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FontAwesomeIcon
-                icon={["fab", "github-alt"]}
-                color="#61666d"
-                size="2x"
-              />
-            </a>
-            <a
-              href="https://www.behance.net/rrwinterstcf2a"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={["fab", "behance"]}
-                color="#61666d"
-                size="2x"
-              />
-            </a>
-            <a
-              href="https://twitter.com/rrwinterstein"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon
-                icon={["fab", "twitter"]}
-                color="#61666d"
-                size="2x"
-              />
+              <FontAwesomeIcon icon={["fab", "github-alt"]} color="#61666d" />
             </a>
           </div>
 

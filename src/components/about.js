@@ -6,24 +6,23 @@ import "../global.scss"
 
 const About = styled.section`
   display: block;
-  height: 100vh;
-  min-height: 900px;
   background: var(--white);
   padding-top: 120px;
   padding-bottom: 120px;
-  padding-left: 12%;
-  padding-right: 12%;
 
   .section:nth-child(1) {
-    margin-bottom: 80px;
+    margin-bottom: 120px;
+  }
+
+  h2 {
+    margin-bottom: 8px;
   }
 
   h4 {
-    margin-top: 8px;
+    margin-bottom: 16px;
   }
 
   p {
-    margin-top: 24px;
     margin-bottom: 0;
   }
 
@@ -31,13 +30,13 @@ const About = styled.section`
     color: var(--accent);
   }
 
-  @media (min-width: 800px) {
+  @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
+    height: 100vh;
+    min-height: 900px;
     padding-top: 160px;
     padding-bottom: 160px;
-    padding-left: 8%;
-    padding-right: 8%;
 
     .section {
       width: 45%;
@@ -49,14 +48,12 @@ const About = styled.section`
 
       &:nth-child(2) {
         align-self: flex-end;
-        margin-top: 240px;
       }
     }
-  }
 
-  @media (min-width: 1024px) {
-    padding-left: 12%;
-    padding-right: 12%;
+    h4 {
+      margin-bottom: 24px;
+    }
   }
 `
 
