@@ -204,7 +204,7 @@ function footer() {
 
       <div className="copyright">
         © {new Date().getFullYear()} - Robert Winterstein{" "}
-        <span style={{ margin: 8 }}>|</span> Thanks for visiting 😁
+        <span style={{ margin: 8 }}>|</span> Thanks for visiting!
       </div>
     </Footer>
   )

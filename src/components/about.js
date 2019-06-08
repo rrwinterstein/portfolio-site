@@ -23,6 +23,10 @@ const About = styled.section`
   }
 
   p {
+    margin-bottom: 40px;
+  }
+
+  p:last-child {
     margin-bottom: 0;
   }
 
@@ -33,8 +37,8 @@ const About = styled.section`
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    height: 100vh;
-    min-height: 900px;
+    height: 200vh;
+    min-height: 1200px;
     padding-top: 160px;
     padding-bottom: 160px;
 
@@ -70,12 +74,27 @@ function about() {
         </h4>
 
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur.
+          I create minimal websites and applications that are easy to use by
+          focusing on the content, respecting margins, and adding subtle
+          interactions that engage the user.
+        </p>
+
+        <p>
+          My passion for design sparked when I was coming up to my graduation at
+          Florida Atlantic University. After getting my degree, I decided to
+          pursue my passion by joining Bloc’s Designer Track. Then I landed an
+          internship at Apple as a UX/UI Designer. I've recently starting
+          working with React (this site is my first project{" "}
+          <span role="img" aria-label="grinning face with squinting eyes">
+            😄
+          </span>
+          ) and knowing front-end development has made me a stronger designer.
+        </p>
+
+        <p>
+          <em>Fun facts:</em> I'm a sucker for great branding (almost bought a
+          brand of almond milk just because of it), cookies & cream flavored
+          anything, and craft beer.
         </p>
       </div>
 
@@ -91,9 +110,20 @@ function about() {
         <p>
           On the AI/Machine Learning team, I worked on design and development
           for internal software platforms, application that utilize machine
-          learning, the team’s design system, and some websites. A large portion
-          of the design team’s effort was around redesigning and building the
-          internal software platforms with the recently created design system.
+          learning, the team’s design system, websites, and demo applications
+          for WWDC 2019.
+        </p>
+
+        <h4>
+          Technical Expert, Operation, and Sales
+          <br />
+          Apple Retail <span>|</span> Aug 13 – Current
+        </h4>
+
+        <p>
+          I've worked across three different stores, starting in sales, then
+          operations, and currently at the Genius Bar, I've had the opportunity
+          to impact multiple areas of the business during my time here.
         </p>
       </div>
     </About>
