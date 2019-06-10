@@ -162,6 +162,13 @@ const Button = styled.a`
     transition: all 200ms ease-in-out;
   }
 
+  &:disabled,
+  &[disabled] {
+    cursor: not-allowed;
+    color: #696969;
+    border-color: #696969;
+  }
+
   @media (min-width: 1024px) {
     font-size: 18px;
     line-height: 25px;
@@ -177,7 +184,14 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>Tapmap</h3>
-          <Button className="btn" href="#">View</Button>
+          <Button
+            className="btn"
+            href="https://medium.com/@rwinterstein/case-study-tapmap-7d3ef2acf26f"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View
+          </Button>
         </div>
         <img src={tapmap} alt="Tapmap" />
       </CaseStudy>
@@ -185,7 +199,15 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>Cloud Space</h3>
-          <Button className="btn" href="#">View</Button>
+          <Button
+            className="btn"
+            // href="#"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            disabled
+          >
+            Coming Soon
+          </Button>
         </div>
         <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
       </CaseStudy>

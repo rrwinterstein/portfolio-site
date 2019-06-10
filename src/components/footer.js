@@ -11,6 +11,7 @@ import { fab } from "@fortawesome/free-brands-svg-icons"
 library.add(fab)
 
 const Footer = styled.footer`
+  background: var(--white);
   padding-top: 40px;
   padding-bottom: 16px;
 
