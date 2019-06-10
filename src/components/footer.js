@@ -168,6 +168,7 @@ function footer() {
               href="https://dribbble.com/rwinterstein"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Dribbble"
             >
               <FontAwesomeIcon icon={["fab", "dribbble"]} color="#61666d" />
             </a>
@@ -175,6 +176,7 @@ function footer() {
               href="https://www.linkedin.com/in/wintersteinrobert/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn"
             >
               <FontAwesomeIcon icon={["fab", "linkedin-in"]} color="#61666d" />
             </a>
@@ -182,6 +184,7 @@ function footer() {
               href="https://www.instagram.com/robwinterstein/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
             >
               <FontAwesomeIcon icon={["fab", "instagram"]} color="#61666d" />
             </a>
@@ -189,6 +192,7 @@ function footer() {
               href="https://github.com/rwinterstein"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub"
             >
               <FontAwesomeIcon icon={["fab", "github-alt"]} color="#61666d" />
             </a>
