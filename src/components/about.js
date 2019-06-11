@@ -37,8 +37,7 @@ const About = styled.section`
   @media (min-width: 768px) {
     display: flex;
     justify-content: space-between;
-    height: 200vh;
-    min-height: 1200px;
+    height: 1400px;
     padding-top: 160px;
     padding-bottom: 160px;
 
