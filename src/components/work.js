@@ -19,6 +19,7 @@ const Work = styled.section`
 
   @media (min-width: 768px) {
     padding-top: 96px;
+    padding-bottom: 160px;
 
     h2 {
       margin-bottom: 160px;
@@ -27,14 +28,18 @@ const Work = styled.section`
 
   @media (min-width: 1024px) {
     padding-top: 120px;
-    padding-bottom: 160px;
-  }
-
-  @media (min-width: 1280px) {
     padding-bottom: 200px;
 
     h2 {
       margin-bottom: 200px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    padding-bottom: 240px;
+
+    h2 {
+      margin-bottom: 240px;
     }
   }
 `
@@ -102,7 +107,9 @@ const CaseStudy = styled.div`
       }
     }
 
-    &:nth-child(even) {
+    &:nth-child(2) {
+      margin-bottom: 160px;
+
       .title {
         order: 2;
       }
@@ -112,7 +119,7 @@ const CaseStudy = styled.div`
   @media (min-width: 1024px) {
     &:nth-child(2) {
       justify-content: flex-start;
-      margin-bottom: 160px;
+      margin-bottom: 200px;
 
       .title {
         margin-left: 120px;
@@ -130,7 +137,7 @@ const CaseStudy = styled.div`
 
   @media (min-width: 1280px) {
     &:nth-child(2) {
-      margin-bottom: 200px;
+      margin-bottom: 240px;
     }
   }
 `
