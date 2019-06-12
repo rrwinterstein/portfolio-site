@@ -37,6 +37,7 @@ const Footer = styled.footer`
     margin-bottom: 16px;
 
     a {
+      color: var(--gray);
       margin-right: 16px;
     }
   }
@@ -85,6 +86,7 @@ const Footer = styled.footer`
         transition: all 200ms ease-in-out;
 
         :hover {
+          color: var(--grayDark);
           background-color: var(--grayLight);
           -webkit-transition: all 200ms ease-in-out;
           -mox-transition: all 200ms ease-in-out;
@@ -170,7 +172,7 @@ function footer() {
               rel="noopener noreferrer"
               aria-label="Dribbble"
             >
-              <FontAwesomeIcon icon={["fab", "dribbble"]} color="#61666d" />
+              <FontAwesomeIcon icon={["fab", "dribbble"]} />
             </a>
             <a
               href="https://www.linkedin.com/in/wintersteinrobert/"
@@ -178,7 +180,7 @@ function footer() {
               rel="noopener noreferrer"
               aria-label="LinkedIn"
             >
-              <FontAwesomeIcon icon={["fab", "linkedin-in"]} color="#61666d" />
+              <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
             </a>
             <a
               href="https://www.instagram.com/robwinterstein/"
@@ -186,7 +188,7 @@ function footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              <FontAwesomeIcon icon={["fab", "instagram"]} color="#61666d" />
+              <FontAwesomeIcon icon={["fab", "instagram"]} />
             </a>
             <a
               href="https://github.com/rwinterstein"
@@ -194,7 +196,7 @@ function footer() {
               rel="noopener noreferrer"
               aria-label="GitHub"
             >
-              <FontAwesomeIcon icon={["fab", "github-alt"]} color="#61666d" />
+              <FontAwesomeIcon icon={["fab", "github-alt"]} />
             </a>
           </div>
 
