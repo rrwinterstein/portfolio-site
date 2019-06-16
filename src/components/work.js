@@ -208,12 +208,11 @@ function work() {
           <h3>Cloud Space</h3>
           <Button
             className="btn"
-            // href="#"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            disabled
+            href="https://medium.com/@rwinterstein/case-study-cloud-space-27f19b66a9f1"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Coming Soon
+            View
           </Button>
         </div>
         <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
