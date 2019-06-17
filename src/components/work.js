@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import gradeML from "../images/grademl.png"
 import tapmap from "../images/tapmap.png"
 import cloudSpace from "../images/cloud-space.png"
 
@@ -56,6 +57,7 @@ const CaseStudy = styled.div`
       margin-bottom: 40px;
 
       h3 {
+        text-align: center;
         color: var(--grayLight);
         margin-bottom: 24px;
       }
@@ -72,26 +74,27 @@ const CaseStudy = styled.div`
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(n) {
     margin-bottom: 120px;
   }
 
-  .img--cloud-space {
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  &:last-child {
+    margin-bottom: 0 !important;
   }
 
   @media (min-width: 768px) {
+    height: 75vh;
+    min-height: 500px;
     flex-direction: row;
+    justify-content: space-between;
 
     &:nth-child(n) {
-      justify-content: space-around;
-
       .title {
         align-self: center;
         margin-bottom: 0;
 
         h3 {
+          text-align: left;
           color: var(--grayLight);
           margin-bottom: 24px;
         }
@@ -102,41 +105,25 @@ const CaseStudy = styled.div`
       }
 
       img {
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        max-height: 800px;
+        width: 60%;
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(n) {
       margin-bottom: 160px;
-
-      .title {
-        order: 2;
-      }
     }
   }
 
   @media (min-width: 1024px) {
-    &:nth-child(2) {
-      justify-content: flex-start;
+    &:nth-child(n) {
       margin-bottom: 200px;
-
-      .title {
-        margin-left: 120px;
-      }
-    }
-
-    &:last-child {
-      justify-content: flex-end;
-
-      .title {
-        margin-right: 120px;
-      }
     }
   }
 
   @media (min-width: 1280px) {
-    &:nth-child(2) {
+    &:nth-child(n) {
       margin-bottom: 240px;
     }
   }
@@ -190,6 +177,22 @@ function work() {
 
       <CaseStudy>
         <div className="title">
+          <h3>GradeML</h3>
+          <Button
+            className="btn"
+            // href="#"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            disabled
+          >
+            Coming soon
+          </Button>
+        </div>
+        <img src={gradeML} alt="GradeML" />
+      </CaseStudy>
+
+      <CaseStudy>
+        <div className="title">
           <h3>Tapmap</h3>
           <Button
             className="btn"
@@ -215,7 +218,7 @@ function work() {
             View
           </Button>
         </div>
-        <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
+        <img src={cloudSpace} alt="Cloud Space" />
       </CaseStudy>
     </Work>
   )
