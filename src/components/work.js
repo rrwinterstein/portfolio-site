@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import gradeML from "../images/grademl.png"
 import tapmap from "../images/tapmap.png"
 import cloudSpace from "../images/cloud-space.png"
 
@@ -51,13 +52,20 @@ const CaseStudy = styled.div`
 
   &:nth-child(n) {
     .title {
+      width: 80%;
       display: flex;
       flex-direction: column;
       margin-bottom: 40px;
 
       h3 {
+        text-align: center;
         color: var(--grayLight);
         margin-bottom: 24px;
+      }
+
+      p {
+        text-align: center;
+        color: var(--grayLight);
       }
 
       .btn {
@@ -72,28 +80,34 @@ const CaseStudy = styled.div`
     }
   }
 
-  &:nth-child(2) {
+  &:nth-child(n) {
     margin-bottom: 120px;
   }
 
-  .img--cloud-space {
-    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
+  &:last-child {
+    margin-bottom: 0 !important;
   }
 
   @media (min-width: 768px) {
+    height: 75vh;
+    min-height: 500px;
     flex-direction: row;
+    justify-content: space-between;
 
     &:nth-child(n) {
-      justify-content: space-around;
-
       .title {
+        width: 30%;
         align-self: center;
         margin-bottom: 0;
 
         h3 {
+          text-align: left;
           color: var(--grayLight);
           margin-bottom: 24px;
+        }
+
+        p {
+          text-align: left;
         }
 
         .btn {
@@ -102,41 +116,25 @@ const CaseStudy = styled.div`
       }
 
       img {
-        height: 50%;
-        width: 50%;
+        height: 100%;
+        max-height: 800px;
+        width: 60%;
       }
     }
 
-    &:nth-child(2) {
+    &:nth-child(n) {
       margin-bottom: 160px;
-
-      .title {
-        order: 2;
-      }
     }
   }
 
   @media (min-width: 1024px) {
-    &:nth-child(2) {
-      justify-content: flex-start;
+    &:nth-child(n) {
       margin-bottom: 200px;
-
-      .title {
-        margin-left: 120px;
-      }
-    }
-
-    &:last-child {
-      justify-content: flex-end;
-
-      .title {
-        margin-right: 120px;
-      }
     }
   }
 
   @media (min-width: 1280px) {
-    &:nth-child(2) {
+    &:nth-child(n) {
       margin-bottom: 240px;
     }
   }
@@ -190,7 +188,31 @@ function work() {
 
       <CaseStudy>
         <div className="title">
+          <h3>GradeML</h3>
+          <p>
+            A demo application for the iPad to showcase machine learning
+            features
+          </p>
+          <Button
+            className="btn"
+            // href="#"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            disabled
+          >
+            Coming soon
+          </Button>
+        </div>
+        <img src={gradeML} alt="GradeML" />
+      </CaseStudy>
+
+      <CaseStudy>
+        <div className="title">
           <h3>Tapmap</h3>
+          <p>
+            Find businesses that accept Apple Pay all in a single, easy to
+            navigate application.
+          </p>
           <Button
             className="btn"
             href="https://medium.com/@rwinterstein/case-study-tapmap-7d3ef2acf26f"
@@ -206,6 +228,10 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>Cloud Space</h3>
+          <p>
+            A simple way to save information and collaborate with others all in
+            one easy-to-use environment.
+          </p>
           <Button
             className="btn"
             href="https://medium.com/@rwinterstein/case-study-cloud-space-27f19b66a9f1"
@@ -215,7 +241,7 @@ function work() {
             View
           </Button>
         </div>
-        <img className="img--cloud-space" src={cloudSpace} alt="Cloud Space" />
+        <img src={cloudSpace} alt="Cloud Space" />
       </CaseStudy>
     </Work>
   )
