@@ -52,6 +52,7 @@ const CaseStudy = styled.div`
 
   &:nth-child(n) {
     .title {
+      width: 80%;
       display: flex;
       flex-direction: column;
       margin-bottom: 40px;
@@ -60,6 +61,11 @@ const CaseStudy = styled.div`
         text-align: center;
         color: var(--grayLight);
         margin-bottom: 24px;
+      }
+
+      p {
+        text-align: center;
+        color: var(--grayLight);
       }
 
       .btn {
@@ -90,6 +96,7 @@ const CaseStudy = styled.div`
 
     &:nth-child(n) {
       .title {
+        width: 30%;
         align-self: center;
         margin-bottom: 0;
 
@@ -97,6 +104,10 @@ const CaseStudy = styled.div`
           text-align: left;
           color: var(--grayLight);
           margin-bottom: 24px;
+        }
+
+        p {
+          text-align: left;
         }
 
         .btn {
@@ -178,6 +189,10 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>GradeML</h3>
+          <p>
+            A demo application for the iPad to showcase machine learning
+            features
+          </p>
           <Button
             className="btn"
             // href="#"
@@ -194,6 +209,10 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>Tapmap</h3>
+          <p>
+            Find businesses that accept Apple Pay all in a single, easy to
+            navigate application.
+          </p>
           <Button
             className="btn"
             href="https://medium.com/@rwinterstein/case-study-tapmap-7d3ef2acf26f"
@@ -209,6 +228,10 @@ function work() {
       <CaseStudy>
         <div className="title">
           <h3>Cloud Space</h3>
+          <p>
+            A simple way to save information and collaborate with others all in
+            one easy-to-use environment.
+          </p>
           <Button
             className="btn"
             href="https://medium.com/@rwinterstein/case-study-cloud-space-27f19b66a9f1"
