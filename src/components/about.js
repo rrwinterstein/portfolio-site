@@ -120,9 +120,12 @@ function about() {
         </h4>
 
         <p>
-          I've worked across three different stores, starting in sales, then
-          operations, and currently at the Genius Bar, I've had the opportunity
-          to impact multiple areas of the business during my time here.
+          I’ve had the opportunity to impact multiple areas of Apple Retail
+          during my six years here while working across three different stores.
+          I started in sales, then moved to operations, and now I currently work
+          at the Genius Bar as a Technical Expert. My current role involves
+          troubleshooting hardware and software, repairing devices, and training
+          new hires.
         </p>
       </div>
     </About>
