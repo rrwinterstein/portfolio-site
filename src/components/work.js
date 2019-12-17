@@ -195,12 +195,11 @@ function work() {
           </p>
           <Button
             className="btn"
-            // href="#"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            disabled
+            href="https://medium.com/@rwinterstein/case-study-grademl-for-wwdc-2019-ec0237248b12?sk=8aaf6a1b36e21985171de8dd2c33758a"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Coming soon
+            View
           </Button>
         </div>
         <img src={gradeML} alt="GradeML" />
