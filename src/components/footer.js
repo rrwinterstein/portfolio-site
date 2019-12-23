@@ -202,7 +202,7 @@ function footer() {
 
           <Button
             className="btn btn-primary"
-            href="mailto:rrwinterstein@gmail.com?subject=Hello!"
+            href="mailto:hello@rwinterstein.com?subject=Hello!"
           >
             Email
           </Button>
