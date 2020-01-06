@@ -79,11 +79,12 @@ function about() {
         </p>
 
         <p>
-          My passion for design sparked when I was coming up to my graduation at
-          Florida Atlantic University. After getting my degree, I decided to
+          My passion for design sparked when I was approaching graduation at
+          Florida Atlantic University. After receiving my degree, I decided to
           pursue my passion by joining Bloc’s Designer Track. Then I landed an
-          internship at Apple as a UX/UI Designer. I've recently starting
-          working with React (this site is my first project{" "}
+          internship at Apple as a UX/UI Designer working on internal websites
+          and platforms. I've recently starting working with React (this site is
+          my first project{" "}
           <span role="img" aria-label="grinning face with squinting eyes">
             😄
           </span>
