@@ -1,13 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 
+// Stylesheets
 import "../colors.css"
 import "../global.scss"
 
+// Fontawesome icons
 import { library } from "@fortawesome/fontawesome-svg-core"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { fab } from "@fortawesome/free-brands-svg-icons"
-
 library.add(fab)
 
 const Footer = styled.footer`
@@ -16,6 +17,7 @@ const Footer = styled.footer`
   padding-bottom: 16px;
 
   h2 {
+    color: var(--grayDark);
     margin-bottom: 32px;
   }
 
@@ -47,7 +49,7 @@ const Footer = styled.footer`
   }
 
   .copyright {
-    font-family: "Open Sans";
+    font-family: "Nunito";
     font-style: normal;
     font-weight: normal;
     font-size: 10px;
@@ -126,7 +128,7 @@ const Footer = styled.footer`
 
 const Button = styled.a`
   width: fit-content;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -145,6 +147,7 @@ const Button = styled.a`
 
   &:hover {
     background-color: var(--grayLight);
+    border-color: var(--grayDark);
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;
@@ -158,7 +161,7 @@ const Button = styled.a`
   }
 `
 
-function footer() {
+const footer = () => {
   return (
     <Footer className="container">
       <div className="contact">
