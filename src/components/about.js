@@ -1,28 +1,32 @@
 import React from "react"
 import styled from "styled-components"
 
+// Stylesheets
 import "../colors.css"
 import "../global.scss"
 
 const About = styled.section`
   display: block;
   background: var(--white);
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 
   .section:nth-child(1) {
-    margin-bottom: 120px;
+    margin-bottom: 80px;
   }
 
   h2 {
+    color: var(--grayDark);
     margin-bottom: 8px;
   }
 
   h4 {
+    color: var(--grayDark);
     margin-bottom: 16px;
   }
 
   p {
+    color: var(--gray);
     margin-bottom: 40px;
   }
 
@@ -60,7 +64,7 @@ const About = styled.section`
   }
 `
 
-function about() {
+const about = () => {
   return (
     <About className="container">
       <div className="section">

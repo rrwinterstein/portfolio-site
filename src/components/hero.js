@@ -1,10 +1,11 @@
 import React from "react"
 import styled from "styled-components"
 
+// Stylesheets
 import "../colors.css"
 import "../global.scss"
 
-const Hero = styled.div`
+const Hero = styled.section`
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,7 @@ const Hero = styled.div`
   }
 `
 
-function hero() {
+const hero = () => {
   return (
     <Hero>
       <div className="container">
