@@ -215,7 +215,7 @@ const projects = () => {
           <p>My wedding website, designed and built from the ground up</p>
           <span>Figma | React | Gatsby | Netlify</span>
           <Button className="btn" disabled>
-            Visit
+            Coming Soon
           </Button>
         </div>
         <img src={wintersteinwedding} alt="Winterstein Wedding" />
