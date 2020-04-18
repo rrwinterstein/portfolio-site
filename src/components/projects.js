@@ -3,8 +3,8 @@ import LazyLoad from "react-lazyload"
 import styled from "styled-components"
 
 // Stylesheets
-import "../colors.css"
-import "../global.scss"
+import "../styles/colors.css"
+import "../styles/global.scss"
 
 // Images
 import afbendana from "../images/afbendana.png"

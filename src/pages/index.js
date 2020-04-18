@@ -6,7 +6,7 @@ import About from "../components/about"
 import Projects from "../components/projects"
 import Footer from "../components/footer"
 
-import "../global.scss"
+import "../styles/global.scss"
 
 const IndexPage = () => (
   <Layout>
