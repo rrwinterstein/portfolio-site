@@ -1,9 +1,10 @@
 import React from "react"
+import LazyLoad from "react-lazyload"
 import styled from "styled-components"
 
 // Stylesheets
-import "../colors.css"
-import "../global.scss"
+import "../styles/colors.css"
+import "../styles/global.scss"
 
 // Images
 import afbendana from "../images/afbendana.png"
@@ -206,7 +207,9 @@ const projects = () => {
             Visit
           </Button>
         </div>
-        <img src={afbendana} alt="Alex Felix Bendaña" />
+        <LazyLoad offset={1000}>
+          <img src={afbendana} alt="Alex Felix Bendaña" />
+        </LazyLoad>
       </Item>
 
       <Item>
@@ -218,7 +221,9 @@ const projects = () => {
             Coming Soon
           </Button>
         </div>
-        <img src={wintersteinwedding} alt="Winterstein Wedding" />
+        <LazyLoad offset={1000}>
+          <img src={wintersteinwedding} alt="Winterstein Wedding" />
+        </LazyLoad>
       </Item>
 
       <Item>
@@ -238,7 +243,9 @@ const projects = () => {
             View
           </Button>
         </div>
-        <img src={gradeML} alt="GradeML" />
+        <LazyLoad offset={1000}>
+          <img src={gradeML} alt="GradeML" />
+        </LazyLoad>
       </Item>
 
       <Item>
@@ -258,7 +265,9 @@ const projects = () => {
             View
           </Button>
         </div>
-        <img src={tapmap} alt="Tapmap" />
+        <LazyLoad offset={1000}>
+          <img src={tapmap} alt="Tapmap" />
+        </LazyLoad>
       </Item>
 
       <Item>
@@ -278,7 +287,9 @@ const projects = () => {
             View
           </Button>
         </div>
-        <img src={cloudSpace} alt="Cloud Space" />
+        <LazyLoad offset={1000}>
+          <img src={cloudSpace} alt="Cloud Space" />
+        </LazyLoad>
       </Item>
     </Section>
   )

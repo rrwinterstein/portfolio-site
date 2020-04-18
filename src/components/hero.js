@@ -2,8 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 // Stylesheets
-import "../colors.css"
-import "../global.scss"
+import "../styles/colors.css"
+import "../styles/global.scss"
 
 const Hero = styled.section`
   height: 100vh;
