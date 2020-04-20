@@ -2,10 +2,6 @@ import React from "react"
 import LazyLoad from "react-lazyload"
 import styled from "styled-components"
 
-// Stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 // Images
 import afbendana from "../images/afbendana.png"
 import wintersteinwedding from "../images/wintersteinwedding.png"
@@ -168,8 +164,8 @@ const Button = styled.a`
   &:disabled,
   &[disabled] {
     cursor: not-allowed;
-    color: #696969;
-    border-color: #696969;
+    color: var(--disabled);
+    border-color: var(--disabled);
   }
 
   @media (min-width: 1024px) {
@@ -217,9 +213,7 @@ const projects = () => {
           <h3>Wedding Website</h3>
           <p>My wedding website, designed and built from the ground up</p>
           <span>Figma | React | Gatsby | Netlify</span>
-          <Button className="btn" disabled>
-            Coming Soon
-          </Button>
+          <Button className="btn" disabled>Coming Soon</Button>
         </div>
         <LazyLoad offset={1000}>
           <img src={wintersteinwedding} alt="Winterstein Wedding" />
