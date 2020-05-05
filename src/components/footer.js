@@ -9,7 +9,7 @@ const Footer = styled.footer`
 
   h2 {
     color: var(--grayDark);
-    margin-bottom: 32px;
+    margin-bottom: 40px;
   }
 
   .contact {
@@ -38,10 +38,6 @@ const Footer = styled.footer`
 
   @media (min-width: 768px) {
     padding-top: 80px;
-
-    h2 {
-      margin-bottom: 40px;
-    }
 
     .copyright {
       font-size: 12px;

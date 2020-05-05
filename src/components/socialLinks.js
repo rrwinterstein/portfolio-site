@@ -11,7 +11,7 @@ const SocialLinks = styled.div`
   display: flex;
   align-items: center;
   font-size: 1.75rem;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 
   a {
     color: var(--gray);
@@ -23,7 +23,6 @@ const SocialLinks = styled.div`
   }
 
   @media (min-width: 768px) {
-    margin-bottom: 24px;
     margin-left: -10px;
 
     a {
