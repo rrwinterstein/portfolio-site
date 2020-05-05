@@ -1,12 +1,8 @@
 import React from "react"
 import styled from "styled-components"
 
-// Stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 const Hero = styled.section`
-  height: 100vh;
+  height: 75vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -18,6 +14,10 @@ const Hero = styled.section`
     @media (min-width: 768px) {
       margin-bottom: 24px;
     }
+  }
+
+  @media (min-width: 768px) {
+    height: 100vh;
   }
 `
 

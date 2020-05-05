@@ -2,11 +2,8 @@ import React from "react"
 import LazyLoad from "react-lazyload"
 import styled from "styled-components"
 
-// Stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 // Images
+import ciscoserrano from "../images/ciscoserrano.png"
 import afbendana from "../images/afbendana.png"
 import wintersteinwedding from "../images/wintersteinwedding.png"
 import gradeML from "../images/grademl.png"
@@ -168,8 +165,8 @@ const Button = styled.a`
   &:disabled,
   &[disabled] {
     cursor: not-allowed;
-    color: #696969;
-    border-color: #696969;
+    color: var(--disabled);
+    border-color: var(--disabled);
   }
 
   @media (min-width: 1024px) {
@@ -195,6 +192,25 @@ const projects = () => {
 
       <Item>
         <div className="title">
+          <h3>Francisco Serrano</h3>
+          <p>Single page, resume website with dark mode functionality</p>
+          <span>Figma | React | Gatsby | Netlify</span>
+          <Button
+            className="btn"
+            href="https://ciscoserrano.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit
+          </Button>
+        </div>
+        <LazyLoad offset={1000}>
+          <img src={ciscoserrano} alt="Francisco Serrano" />
+        </LazyLoad>
+      </Item>
+
+      <Item>
+        <div className="title">
           <h3>Alex Felix Bendaña</h3>
           <p>A portfolio website for a screenwriter/producer</p>
           <span>Figma | React | Gatsby | Netlify</span>
@@ -217,7 +233,13 @@ const projects = () => {
           <h3>Wedding Website</h3>
           <p>My wedding website, designed and built from the ground up</p>
           <span>Figma | React | Gatsby | Netlify</span>
-          <Button className="btn" disabled>
+          <Button
+            className="btn"
+            // href="https://"
+            target="_blank"
+            rel="noopener noreferrer"
+            disabled
+          >
             Coming Soon
           </Button>
         </div>

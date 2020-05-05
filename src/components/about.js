@@ -1,10 +1,6 @@
 import React from "react"
 import styled from "styled-components"
 
-// Stylesheets
-import "../styles/colors.css"
-import "../styles/global.scss"
-
 const About = styled.section`
   display: block;
   background: var(--white);
