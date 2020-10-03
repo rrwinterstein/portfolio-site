@@ -29,7 +29,7 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
-    "react-lazyload": "^3.0.0",
+    "react-lazyload": "^2.6.9",
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
