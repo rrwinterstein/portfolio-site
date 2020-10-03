@@ -204,7 +204,7 @@ const projects = () => {
             Visit
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={ciscoserrano} alt="Francisco Serrano" />
         </LazyLoad>
       </Item>
@@ -223,7 +223,7 @@ const projects = () => {
             Visit
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={afbendana} alt="Alex Felix Bendaña" />
         </LazyLoad>
       </Item>
@@ -231,8 +231,13 @@ const projects = () => {
       <Item>
         <div className="title">
           <h3>Wedding Website</h3>
-          <p>My wedding website, designed and built from the ground up</p>
-          <span>Figma | React | Gatsby | Netlify</span>
+          <p>
+            My wedding website, designed and built from the ground up. I've also
+            worked on print design for our wedding stationary.
+          </p>
+          <span>
+            Figma | React | Gatsby | Netlify | Affinity Designer & Photo
+          </span>
           <Button
             className="btn"
             // href="https://"
@@ -243,7 +248,7 @@ const projects = () => {
             Coming Soon
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={wintersteinwedding} alt="Winterstein Wedding" />
         </LazyLoad>
       </Item>
@@ -265,7 +270,7 @@ const projects = () => {
             View
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={gradeML} alt="GradeML" />
         </LazyLoad>
       </Item>
@@ -287,7 +292,7 @@ const projects = () => {
             View
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={tapmap} alt="Tapmap" />
         </LazyLoad>
       </Item>
@@ -309,7 +314,7 @@ const projects = () => {
             View
           </Button>
         </div>
-        <LazyLoad offset={1000}>
+        <LazyLoad offset={2000} once>
           <img src={cloudSpace} alt="Cloud Space" />
         </LazyLoad>
       </Item>
