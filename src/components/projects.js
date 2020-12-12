@@ -240,12 +240,11 @@ const projects = () => {
           </span>
           <Button
             className="btn"
-            // href="https://"
+            href="https://wintersteinwedding.com"
             target="_blank"
             rel="noopener noreferrer"
-            disabled
           >
-            Coming Soon
+            Visit
           </Button>
         </div>
         <LazyLoad offset={2000} once>
