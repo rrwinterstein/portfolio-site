@@ -79,8 +79,9 @@ const Button = styled.a`
   transition: all 200ms ease-in-out;
 
   &:hover {
+    color: var(--accent);
     background-color: var(--grayLight);
-    border-color: var(--grayDark);
+    border-color: var(--accent);
     -webkit-transition: all 200ms ease-in-out;
     -mox-transition: all 200ms ease-in-out;
     -o-transition: all 200ms ease-in-out;

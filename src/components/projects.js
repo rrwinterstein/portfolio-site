@@ -26,9 +26,13 @@ const SectionHeading = styled.div`
   p {
     max-width: 400px;
     border-left: 1px solid;
-    border-color: var(--grayLight);
+    border-color: var(--accent);
     color: var(--grayLight);
     padding-left: 16px;
+  }
+
+  span {
+    color: var(--accent);
   }
 
   @media (min-width: 768px) {
@@ -181,7 +185,7 @@ const projects = () => {
     <Section className="container">
       <SectionHeading>
         <h2>
-          Projects &<br />
+          Projects <span>&</span><br />
           Case Studies
         </h2>
         <p>

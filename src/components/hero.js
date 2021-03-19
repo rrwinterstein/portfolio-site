@@ -19,6 +19,10 @@ const Hero = styled.section`
   @media (min-width: 768px) {
     height: 100vh;
   }
+
+  span {
+    color: var(--accent);
+  }
 `
 
 const hero = () => {
@@ -28,7 +32,7 @@ const hero = () => {
         <h1>Robert Winterstein</h1>
 
         <p className="subheading">
-          Front End Developer + UI Designer
+          Front End Developer <span>+</span> UI Designer
         </p>
       </div>
     </Hero>

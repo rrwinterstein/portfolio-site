@@ -40,7 +40,7 @@ const SocialLinks = styled.div`
       transition: all 200ms ease-in-out;
 
       :hover {
-        color: var(--grayDark);
+        color: var(--accent);
         background-color: var(--grayLight);
         -webkit-transition: all 200ms ease-in-out;
         -mox-transition: all 200ms ease-in-out;
