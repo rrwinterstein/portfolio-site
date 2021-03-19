@@ -104,7 +104,7 @@ const about = () => {
         <h4>
           UX/UI Design Internship
           <br />
-          Apple <span>|</span> Jan 19 – Jun 19
+          Apple <span>|</span> Jan 2019 – Jun 2019
         </h4>
 
         <p>
@@ -117,7 +117,7 @@ const about = () => {
         <h4>
           Technical Expert, Operation, and Sales
           <br />
-          Apple Retail <span>|</span> Aug 13 – Current
+          Apple Retail <span>|</span> Aug 2013 – Current
         </h4>
 
         <p>
