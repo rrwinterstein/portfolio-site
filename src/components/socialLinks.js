@@ -63,14 +63,6 @@ const socialLinks = () => {
   return (
     <SocialLinks>
       <a
-        href="https://dribbble.com/rwinterstein"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Dribbble"
-      >
-        <FontAwesomeIcon icon={["fab", "dribbble"]} />
-      </a>
-      <a
         href="https://www.linkedin.com/in/wintersteinrobert/"
         target="_blank"
         rel="noopener noreferrer"
@@ -79,20 +71,28 @@ const socialLinks = () => {
         <FontAwesomeIcon icon={["fab", "linkedin-in"]} />
       </a>
       <a
-        href="https://www.instagram.com/robwinterstein/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-      >
-        <FontAwesomeIcon icon={["fab", "instagram"]} />
-      </a>
-      <a
         href="https://github.com/rwinterstein"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="GitHub"
       >
         <FontAwesomeIcon icon={["fab", "github-alt"]} />
+      </a>
+      <a
+        href="https://dribbble.com/rwinterstein"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Dribbble"
+      >
+        <FontAwesomeIcon icon={["fab", "dribbble"]} />
+      </a>
+      <a
+        href="https://www.instagram.com/robwinterstein/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram"
+      >
+        <FontAwesomeIcon icon={["fab", "instagram"]} />
       </a>
     </SocialLinks>
   )
