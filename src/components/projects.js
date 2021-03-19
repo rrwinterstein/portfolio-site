@@ -236,7 +236,7 @@ const projects = () => {
         <div className="title">
           <h3>Wedding Website</h3>
           <p>
-            My wedding website, designed and built from the ground up. I've also
+            My wedding website, designed and built from the ground up. I also
             worked on print design for our wedding stationary.
           </p>
           <span>
