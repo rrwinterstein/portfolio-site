@@ -28,9 +28,7 @@ const hero = () => {
         <h1>Robert Winterstein</h1>
 
         <p className="subheading">
-          a UX/UI designer who
-          <br />
-          loves to code
+          Front End Developer + UI Designer
         </p>
       </div>
     </Hero>
