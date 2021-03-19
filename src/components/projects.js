@@ -194,7 +194,7 @@ const projects = () => {
         <div className="title">
           <h3>Francisco Serrano</h3>
           <p>Single page, resume website with dark mode functionality</p>
-          <span>Figma | React | Gatsby | Netlify</span>
+          <span>React | Gatsby | Netlify | Figma</span>
           <Button
             className="btn"
             href="https://ciscoserrano.com/"
@@ -213,7 +213,7 @@ const projects = () => {
         <div className="title">
           <h3>Alex Felix Bendaña</h3>
           <p>A portfolio website for a screenwriter/producer</p>
-          <span>Figma | React | Gatsby | Netlify</span>
+          <span>React | Gatsby | Netlify | Figma</span>
           <Button
             className="btn"
             href="https://afbendana.com"
@@ -236,7 +236,7 @@ const projects = () => {
             worked on print design for our wedding stationary.
           </p>
           <span>
-            Figma | React | Gatsby | Netlify | Affinity Designer & Photo
+            React | Gatsby | Netlify | Figma | Affinity Designer & Photo
           </span>
           <Button
             className="btn"
@@ -303,7 +303,7 @@ const projects = () => {
             A simple way to save information and collaborate with others all in
             one easy-to-use environment
           </p>
-          <span>Sketch | Illustrator | HTML/CSS</span>
+          <span>HTML/CSS | Sketch | Illustrator</span>
           <Button
             className="btn"
             href="https://medium.com/@rwinterstein/case-study-cloud-space-27f19b66a9f1?source=friends_link&sk=9c938f208300134104f77995900095f3"
