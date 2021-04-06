@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `UX/UI Designer & Developer`,
-    description: `UX/UI Designer & Developer based in Orlando Florida`,
+    title: `Front End Developer`,
+    description: `Front End Developer & UI Designer based in Orlando, Florida`,
     author: `Robert Winterstein`,
   },
   plugins: [
