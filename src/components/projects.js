@@ -185,7 +185,8 @@ const projects = () => {
     <Section className="container">
       <SectionHeading>
         <h2>
-          Projects <span>&</span><br />
+          Projects <span>&</span>
+          <br />
           Case Studies
         </h2>
         <p>

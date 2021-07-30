@@ -94,7 +94,7 @@ const about = () => {
         <h4>
           Web Developer Internship
           <br />
-          Apple <span>|</span> Sept 2020 – Current
+          Apple <span>|</span> Sept 2020 – Apr 2021
         </h4>
 
         <p>
@@ -126,11 +126,11 @@ const about = () => {
 
         <p>
           I’ve had the opportunity to impact multiple areas of Apple Retail
-          during my seven years here while working across three different stores.
-          I started in sales, then moved to operations, and now I currently work
-          at the Genius Bar as a Technical Expert. My current role involves
-          troubleshooting hardware and software, repairing devices, and training
-          new hires.
+          during my seven years here while working across three different
+          stores. I started in sales, then moved to operations, and now I
+          currently work at the Genius Bar as a Technical Expert. My current
+          role involves troubleshooting hardware and software, repairing
+          devices, and training new hires.
         </p>
       </div>
     </About>
