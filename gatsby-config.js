@@ -1,40 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Front End Developer`,
-    description: `Front End Developer & UI Designer based in Orlando, Florida`,
-    author: `Robert Winterstein`,
+    siteUrl: "https://www.rwinterstein.com/",
+    title: "Front End Developer",
+    description: "Front End Developer & UI Designer based in Orlando, Florida",
+    author: "Robert Winterstein",
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-image",
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-plugin-manifest",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
-        start_url: `/`,
-        theme_color: `#282d34`,
-        display: `minimal-ui`,
-        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
-      },
-    },
-    `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-styled-components`,
-      options: {
-        // Add any options here
+        start_url: "/",
+        theme_color: "#282d34",
+        icon: "src/images/favicon.png", // This path is relative to the root of the site.
       },
     },
     {
-      resolve: `gatsby-plugin-google-gtag`,
+      resolve: "gatsby-plugin-google-gtag",
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
         trackingIds: [
@@ -57,8 +39,18 @@ module.exports = {
         },
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sass",
+    "gatsby-plugin-styled-components",
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+    "gatsby-transformer-sharp",
   ],
 }
