@@ -93,10 +93,17 @@ const Item = styled.div`
     }
   }
 
-  img {
+  .lazyload-wrapper {
+    display: flex;
     width: 80%;
-    object-fit: contain;
     margin: 0;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+      margin: 0;
+    }
   }
 
   @media (min-width: 768px) {
@@ -129,7 +136,7 @@ const Item = styled.div`
         }
       }
 
-      img {
+      .lazyload-wrapper {
         height: 100%;
         max-height: 800px;
         width: 60%;
