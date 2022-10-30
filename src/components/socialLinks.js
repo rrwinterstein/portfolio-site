@@ -86,14 +86,6 @@ const socialLinks = () => {
       >
         <FontAwesomeIcon icon={["fab", "dribbble"]} />
       </a>
-      <a
-        href="https://www.instagram.com/robwinterstein/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Instagram"
-      >
-        <FontAwesomeIcon icon={["fab", "instagram"]} />
-      </a>
     </SocialLinks>
   )
 }

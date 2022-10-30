@@ -57,9 +57,9 @@ const about = () => {
         <h2>What I Do</h2>
 
         <h4>
-          Developer <span>&</span> Designer
+          <span>UI Designer</span>
           <br />
-          from Orlando Florida.
+          from Orlando, Florida.
         </h4>
 
         <p>
