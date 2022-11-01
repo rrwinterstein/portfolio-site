@@ -32,7 +32,7 @@ const hero = () => {
         <h1>Robert Winterstein</h1>
 
         <p className="subheading">
-          Front End Developer <span>+</span> UI Designer
+          UI Designer <span>+</span> Front End Developer
         </p>
       </div>
     </Hero>
