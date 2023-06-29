@@ -121,15 +121,15 @@ const about = () => {
         <h4>
           Technical Expert, Operation, and Sales
           <br />
-          Apple Retail <span>|</span> Aug 2013 – Current
+          Apple Retail <span>|</span> Aug 2013 – Apr 2022
         </h4>
 
         <p>
           I’ve had the opportunity to impact multiple areas of Apple Retail
-          during my seven years here while working across three different
-          stores. I started in sales, then moved to operations, and now I
-          currently work at the Genius Bar as a Technical Expert. My current
-          role involves troubleshooting hardware and software, repairing
+          during my seven years while working across three different stores. I
+          started in sales, moved into operations, and then made my final
+          transition to the Genius Bar as a Technical Expert. In this role, I
+          was involved with troubleshooting hardware and software, repairing
           devices, and training new hires.
         </p>
       </div>
