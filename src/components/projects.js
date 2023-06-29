@@ -204,16 +204,17 @@ const projects = () => {
 
       <Item>
         <div className="title">
-          <h3>Francisco Serrano</h3>
+          <h3>Resume Website</h3>
           <p>Single page, resume website with dark mode functionality</p>
           <span>React | Gatsby | Netlify | Figma</span>
           <Button
             className="btn"
-            href="https://ciscoserrano.com/"
-            target="_blank"
-            rel="noopener noreferrer"
+            // href="https://ciscoserrano.com/"
+            // target="_blank"
+            // rel="noopener noreferrer"
+            disabled
           >
-            Visit
+            Coming Soon
           </Button>
         </div>
         <LazyLoad offset={2000} once>
@@ -223,7 +224,7 @@ const projects = () => {
 
       <Item>
         <div className="title">
-          <h3>Alex Felix Bendaña</h3>
+          <h3>Portfolio Website</h3>
           <p>A portfolio website for a screenwriter/producer</p>
           <span>React | Gatsby | Netlify | Figma</span>
           <Button
@@ -242,7 +243,7 @@ const projects = () => {
 
       <Item>
         <div className="title">
-          <h3>Wedding Website</h3>
+          <h3>Single Page Website</h3>
           <p>
             My wedding website, designed and built from the ground up. I also
             worked on print design for our wedding stationary.
