@@ -209,12 +209,11 @@ const projects = () => {
           <span>React | Gatsby | Netlify | Figma</span>
           <Button
             className="btn"
-            // href="https://ciscoserrano.com/"
-            // target="_blank"
-            // rel="noopener noreferrer"
-            disabled
+            href="https://sprightly-marshmallow-6c7531.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Coming Soon
+            Visit
           </Button>
         </div>
         <LazyLoad offset={2000} once>
