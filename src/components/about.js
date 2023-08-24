@@ -92,6 +92,24 @@ const about = () => {
         <h2>Where I've Worked</h2>
 
         <h4>
+          UI Designer
+          <br />
+          RealTime Services <span>|</span> Apr 2022 – Current
+        </h4>
+
+        <p>
+          As the first designer at RealTime Services, I've had the opportunity
+          to create a design system and style guide from scratch as a guide for
+          our design language and a source of truth for handoff to developers.
+          After creating our styles and assets, one of our largest tasks was
+          developing a new version of our PEO software platform where I created
+          design mockups to give it a refresh, modern look and feel while also
+          prioritizing functionality. In addition to the designs, I also assist
+          our development team in implementation using Angular, Material Design,
+          HTML, and SCSS.
+        </p>
+
+        <h4>
           Web Developer Internship
           <br />
           Apple <span>|</span> Sept 2020 – Apr 2021
@@ -116,21 +134,6 @@ const about = () => {
           for internal software platforms, an application that utilizes machine
           learning, the team’s design system, websites, and demo applications
           for WWDC 2019.
-        </p>
-
-        <h4>
-          Technical Expert, Operation, and Sales
-          <br />
-          Apple Retail <span>|</span> Aug 2013 – Apr 2022
-        </h4>
-
-        <p>
-          I’ve had the opportunity to impact multiple areas of Apple Retail
-          during my seven years while working across three different stores. I
-          started in sales, moved into operations, and then made my final
-          transition to the Genius Bar as a Technical Expert. In this role, I
-          was involved with troubleshooting hardware and software, repairing
-          devices, and training new hires.
         </p>
       </div>
     </About>
