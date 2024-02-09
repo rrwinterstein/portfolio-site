@@ -5,7 +5,6 @@ import styled from "styled-components"
 // Images
 import ciscoserrano from "../images/ciscoserrano.png"
 import afbendana from "../images/afbendana.png"
-import wintersteinwedding from "../images/wintersteinwedding.png"
 import gradeML from "../images/grademl.png"
 import tapmap from "../images/tapmap.png"
 import cloudSpace from "../images/cloud-space.png"
@@ -237,30 +236,6 @@ const projects = () => {
         </div>
         <LazyLoad offset={2000} once>
           <img src={afbendana} alt="Alex Felix Bendaña" />
-        </LazyLoad>
-      </Item>
-
-      <Item>
-        <div className="title">
-          <h3>Single Page Website</h3>
-          <p>
-            My wedding website, designed and built from the ground up. I also
-            worked on print design for our wedding stationary.
-          </p>
-          <span>
-            React | Gatsby | Netlify | Figma | Affinity Designer & Photo
-          </span>
-          <Button
-            className="btn"
-            href="https://wintersteinwedding.com"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Visit
-          </Button>
-        </div>
-        <LazyLoad offset={2000} once>
-          <img src={wintersteinwedding} alt="Winterstein Wedding" />
         </LazyLoad>
       </Item>
 
