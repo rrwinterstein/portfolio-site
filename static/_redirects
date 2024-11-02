@@ -1,0 +1,2 @@
+# Redirects Netlify domain to primary domain
+https://rwinterstein.netlify.com/* https://www.rwinterstein.com/:splat 301!
